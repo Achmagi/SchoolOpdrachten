@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>Switch-Opdracht</title>
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <Script>
+        var datum = new Date()
+        var vandaag = datum.getDay()
+        var uur = datum.getHours()
+        document.write("Het is vandaag: " + datum)
+        switch (vandaag) 
+        {
+            case 1:
+                document.write("<br>Maandag is mijn eerste stagedag")
+                break
+            case 2:
+                document.write("<br>Dinsdag is mijn tweede stagedag")
+                break
+            case 3:
+                document.write("<br>Woensdag is mijn JavaScript dag")
+                break
+            case 4:
+                document.write("<br>Donderdag is mijn werkdag")
+                break
+            case 5:
+                document.write("<br>Vrijdag is mijn roostervrije dag")
+                break
+        }
+    </Script>
+</body>
+</html>
