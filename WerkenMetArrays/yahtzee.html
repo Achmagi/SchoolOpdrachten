@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>Write</title>
+
+
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <button id="RollDice" onclick="DiceRoll()">Click to roll dice</button>
+
+
+    <script>        
+        function DiceRoll()
+        {
+            var dice1 = Math.floor(Math.random() * 6) + 1;
+            var dice2 = Math.floor(Math.random() * 6) + 1;
+            var dice3 = Math.floor(Math.random() * 6) + 1;
+            var dice4 = Math.floor(Math.random() * 6) + 1;
+            var dice5 = Math.floor(Math.random() * 6) + 1;
+            worp = [dice1, dice2, dice3, dice4, dice5]
+
+            parseInt(worp)
+            document.write("Het resultaat: " + worp + "<br>")
+            document.write("Het totaal is: " + (worp[0] + worp[1] + worp[2] + worp[3] + worp[4]))
+        }
+    </script>
+</body>
+</html>
