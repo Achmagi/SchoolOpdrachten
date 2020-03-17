@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>RandomNumber</title>
+
+
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var vraag = 'Kies een nummer onder de 10'
+        var antwoord = prompt(vraag)
+        var randomNumber = Math.random(1, 11)
+        var goed = '<h2> Prima, ga zo door! </h2>'
+        var fout = '<h2> Jammer, volgende keer beter !</h2>'
+
+        if (antwoord == randomNumber)
+        {
+            document.write(goed)
+        }
+        else
+        {
+            document.write(fout)
+        }
+    </script>
+</body>
+</html>

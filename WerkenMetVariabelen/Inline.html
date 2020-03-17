@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>Inline</title>
+
+
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <button id="btnPrompt" onclick="toonPrompt()">Voer code in</button>
+    <p id="tekstP">De code die u invoerde was: </p>
+    
+
+
+    
+
+    <script>
+        function toonPrompt()
+        {
+            var code = prompt('Vul uw promotiecode in', 'uw code');
+            var tekst = document.getElementById("tekstP").innerHTML
+            document.write(tekst + " " + code)
+        }
+    </script>
+
+
+
+</body>
+</html>
