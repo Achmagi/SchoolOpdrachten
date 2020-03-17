@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>lab14</title>
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        var lengte = alpha.length
+        function nieuwewoorden()
+        {
+            for (x = 0; x < 5; x++)
+            {
+                var randomletter = alpha[Math.floor((Math.random() * alpha.length))]
+                document.write(randomletter)
+            }
+        }
+        nieuwewoorden()
+    </script>
+</body>
+</html>
