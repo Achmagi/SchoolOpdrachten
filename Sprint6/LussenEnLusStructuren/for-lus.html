@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>for-lus</title>
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        for (x = 0; x < 3; x++)
+        {
+            document.write("<br>Dit is lus: " + x)
+        }
+
+        var student = new Array('Zakaria', 'Albert', 'Hamsa', 'Mike', 'Pieter', 'Harry')
+        for (x = 0; x < student.length; x++)
+        {
+            document.write("<br>Element " + x + " is " + student[x])
+        }
+
+        for (x = 0; x < student.length; x += 2)
+        {
+            document.write("<br>Element " + x + " is " + student[x])
+        }
+
+        var tekst = "Hij lijkt een beetje op Nelson Mandela."
+        lengte = tekst.length
+        spaties = 0
+        document.write("<br>")
+        for (x = 0; x < lengte; x++)
+        {
+            teken = tekst.charAt(x)
+            document.write(teken)
+            if (teken == " ")
+            {
+                spaties ++
+            }
+        }
+
+        document.write("<br>Tekst bevat " + spaties + " spaties<br>")
+
+        aA = 0
+        eE = 0
+        iI = 0
+        oO = 0
+        uU = 0
+        for (x = 0; x < lengte; x++)
+        {
+            teken = tekst.charAt(x)
+            document.write(teken)
+            if (teken == "a")
+            {
+                aA ++
+            }
+
+            if (teken == "e")
+            {
+                eE ++
+            }
+
+            if (teken == "i")
+            {
+                iI ++
+            }
+
+            if (teken == "o")
+            {
+                oO ++
+            }
+
+            if (teken == "u")
+            {
+                uU ++
+            }
+        }
+
+        document.write("<br>Opgave 73")
+        document.write("<br>Aantal a's: " + aA)
+        document.write("<br>Aantal e's: " + eE)
+        document.write("<br>Aantal i's: " + iI)
+        document.write("<br>Aantal o's: " + oO)
+        document.write("<br>Aantal u's: " + uU + "<br>")
+
+        var getal = new Array()
+        getal[0] = 'nul'
+        getal[1] = 'een'
+        getal[2] = 'twee'
+        getal[3] = 'drie'
+        getal[4] = 'vier'
+        getal[5] = 'vijf'
+        getal[6] = 'zes'
+        getal[7] = 'zeven'
+        getal[8] = 'acht'
+        getal[9] = 'negen'
+
+        var telNummer = prompt("Wat is je telefoon nummer?")
+
+        document.write("<br>" + telNummer + "<br>")
+
+        telLengte = telNummer.length
+
+        for (x = 0; x < telLengte; x ++)
+        {
+            telTeken = telNummer.charAt(x)
+            if (telTeken == "0")
+            {
+                document.write(getal[0] + " ")
+            }
+
+            if (telTeken == "1")
+            {
+                document.write(getal[1] + " ")
+            }
+
+            if (telTeken == "2")
+            {
+                document.write(getal[2] + " ")
+            }
+
+            if (telTeken == "3")
+            {
+                document.write(getal[3] + " ")
+            }
+
+            if (telTeken == "4")
+            {
+                document.write(getal[4] + " ")
+            }
+
+            if (telTeken == "5")
+            {
+                document.write(getal[5] + " ")
+            }
+
+            if (telTeken == "6")
+            {
+                document.write(getal[6] + " ")
+            }
+
+            if (telTeken == "7")
+            {
+                document.write(getal[7] + " ")
+            }
+
+            if (telTeken == "8")
+            {
+                document.write(getal[8] + " ")
+            }
+
+            if (telTeken == "9")
+            {
+                document.write(getal[9] + " ")
+            }
+        }
+
+
+    </script>
+</body>
+</html>
