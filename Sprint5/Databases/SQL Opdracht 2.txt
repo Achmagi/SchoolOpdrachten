@@ -1,0 +1,7 @@
+USE WorldEvents;
+
+SELECT *
+FROM tblCategory
+FULL OUTER JOIN tblEvent
+ON tblCategory.CategoryID = tblEvent.CategoryID
+WHERE tblEvent.EventName is null;
