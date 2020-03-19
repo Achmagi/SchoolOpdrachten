@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>Lab 03</title>
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h3>Lab 03</h3>
+    <script>
+        testArray = []
+        testArray[0] = "een"
+        testArray[1] = "twee"
+        testArray[2] = 3
+        testArray[3] = "vier"
+
+        testArray.push(5)
+        document.write(testArray)
+        document.write("<br>" + "Datatype is: " + typeof testArray[4])
+        testArray.pop()
+        document.write("<br>" + testArray)
+        testArray.unshift("nul")
+        document.write("<br>" + testArray)
+        testArray.shift()
+        document.write("<br>" + typeof testArray[0])
+        document.write("<br>" + testArray)
+        testArray.splice(1, 1)
+        document.write("<br>" + testArray)
+        testArray.splice(2, 1)
+        document.write("<br>" + testArray)
+    </script>
+</body>
+</html>

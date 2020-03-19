@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>Spreekwoorden</title>
+
+
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var d = new Date()
+        var spreekwoorden = ["Eigen haard is goud waard", "Haastige spoed is zelden goed", "Beter laat dan nooit", "Wie het laatst lacht, lacht het best", "De morgenstond heeft goud in de mond", "Zoals het klokje thuis tikt, tikt het nergen", "Oost west, thuis best"]
+        var days = ["Zondag","Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"]
+        document.write("Het is vandaag: " + days[d.getDay()] + "<br>");
+        document.write("De tip van de dag is: " + spreekwoorden[d.getDay()])
+    </script>
+</body>
+</html>

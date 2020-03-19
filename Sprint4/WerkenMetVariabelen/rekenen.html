@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>RandomNumber</title>
+
+
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var getal1 = parseInt(prompt("voer getal 1 in"))
+        var getal2 = parseInt(prompt("voer getal 2 in"))
+        var operator = prompt("voer een van de volgende dingen in (plus, min, maal, delen)")
+
+        if (operator == "plus")
+        {
+            document.write(getal1 + getal2)
+        }
+        else if (operator == "min")
+        {
+            document.write(getal1 - getal2)
+        }
+        else if (operator == "maal")
+        {
+            document.write(getal1 * getal2)
+        }
+        else if (operator == "delen")
+        {
+            document.write(getal1 / getal2)
+        }
+    </script>
+</body>
+</html>
