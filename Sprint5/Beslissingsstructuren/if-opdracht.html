@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <title>If-Opdracht</title>
+<head>
+    <meta http-equiv="Content-Type"
+        content="text/html"
+        charset=UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        var doorgaan = confirm("Opgave 52: Doorgaan?")
+        var leerplichtig
+        if (doorgaan == true)
+        {
+            var leeftijd = prompt("Wat is je leeftijd?")
+            if (leeftijd == null)
+            {
+                alert("Pff durft de website nie eens op")
+                window.close()
+            }
+            if (leeftijd < 17)
+            {
+                leerplichtig = true
+            }
+            else
+            {
+                leerplichtig = false
+            }
+            if (doorgaan && leerplichtig)
+            {
+                alert("Je bent leerplichtig. Tot ziens!")
+                window.close()
+            }
+            else
+            {
+                alert("Je bent NIET leerplichtig. Tot ziens!")
+                window.close()
+            }
+            
+            
+        }
+        
+        else
+        {
+            alert("Pff durft de website nie eens op")
+            window.close()
+        }
+
+
+    </script>
+</body>
+</html>
