@@ -1,0 +1,23 @@
+BEGIN TRANSACTION
+INSERT INTO tblDoctor(
+
+	DoctorName,
+
+	DoctorNumber
+
+	) VALUES (
+
+	'Shaun the Sheep',
+
+	13
+	
+	)
+IF 2+2=5
+BEGIN 
+	ROLLBACK TRANSACTION;
+END
+
+ELSE 
+BEGIN
+	COMMIT TRANSACTION;
+END
