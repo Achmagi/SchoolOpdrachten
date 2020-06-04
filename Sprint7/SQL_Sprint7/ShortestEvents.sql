@@ -1,2 +1,7 @@
-Select *, len(EventName) as Lenght  from tblEvent
-Order by Lenght 
+USE WorldEvents
+
+SELECT EventName, LEN(EventName) AS LenghtOfName
+
+FROM tblEvent 
+
+ORDER BY LenghtOfName ASC
